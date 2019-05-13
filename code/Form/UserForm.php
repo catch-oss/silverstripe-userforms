@@ -11,12 +11,15 @@ use SilverStripe\Forms\FormAction;
 use SilverStripe\Forms\RequiredFields;
 use SilverStripe\UserForms\FormField\UserFormsStepField;
 use SilverStripe\UserForms\FormField\UserFormsFieldList;
+use Azt3k\SS\Twig\TwigRenderer;
 
 /**
  * @package userforms
  */
 class UserForm extends Form
 {
+    use TwigRenderer;
+
     /**
      * @config
      * @var string
